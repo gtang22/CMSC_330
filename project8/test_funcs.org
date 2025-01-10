@@ -1,0 +1,525 @@
+#+TITLE: P8 Functions
+#+TESTY: PREFIX=funcs
+#+TESTY: POST_FILTER=./test_post_filter
+#+TESTY: USE_POINTS=1
+#+TESTY: POINTS=2
+
+* test_load_string_upper1
+#+TESTY: program='cargo test --test test_p8funcs test_load_string_upper1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_load_string_upper1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_load_string_upper2
+#+TESTY: program='cargo test --test test_p8funcs test_load_string_upper2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_load_string_upper2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_load_string_upper3
+#+TESTY: program='cargo test --test test_p8funcs test_load_string_upper3'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_load_string_upper3 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_load_string_upper4
+#+TESTY: program='cargo test --test test_p8funcs test_load_string_upper4'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_load_string_upper4 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected1
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected2
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected3
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected3'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected3 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected4
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected4'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected4 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected5
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected5'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected5 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected6
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected6'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected6 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected_empty_input
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected_empty_input'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected_empty_input ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected_empty_dict
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected_empty_dict'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected_empty_dict ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected_contractions
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected_contractions'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected_contractions ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected_load_string1
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected_load_string1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected_load_string1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected_load_string2
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected_load_string2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected_load_string2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected_load_string3
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected_load_string3'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected_load_string3 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected_load_string4
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected_load_string4'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected_load_string4 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrected_load_string5
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrected_load_string5'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrected_load_string5 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_correct_string1
+#+TESTY: program='cargo test --test test_p8funcs test_correct_string1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_correct_string1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_correct_string2
+#+TESTY: program='cargo test --test test_p8funcs test_correct_string2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_correct_string2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_correct_string3
+#+TESTY: program='cargo test --test test_p8funcs test_correct_string3'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_correct_string3 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_correct_string4
+#+TESTY: program='cargo test --test test_p8funcs test_correct_string4'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_correct_string4 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_correct_string5
+#+TESTY: program='cargo test --test test_p8funcs test_correct_string5'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_correct_string5 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrector_basics
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrector_basics'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrector_basics ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrector_correct_string1
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrector_correct_string1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrector_correct_string1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrector_correct_string2
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrector_correct_string2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrector_correct_string2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mark_corrector_correct_string3
+#+TESTY: program='cargo test --test test_p8funcs test_mark_corrector_correct_string3'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_mark_corrector_correct_string3 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_auto_corrector_closest_word1
+#+TESTY: program='cargo test --test test_p8funcs test_auto_corrector_closest_word1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_auto_corrector_closest_word1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_auto_corrector_closest_word2
+#+TESTY: program='cargo test --test test_p8funcs test_auto_corrector_closest_word2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_auto_corrector_closest_word2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_auto_corrector_closest_word3
+#+TESTY: program='cargo test --test test_p8funcs test_auto_corrector_closest_word3'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_auto_corrector_closest_word3 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_ac_correct_word_show_sub_false1
+#+TESTY: program='cargo test --test test_p8funcs test_ac_correct_word_show_sub_false1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_ac_correct_word_show_sub_false1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_ac_correct_word_show_sub_false2
+#+TESTY: program='cargo test --test test_p8funcs test_ac_correct_word_show_sub_false2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_ac_correct_word_show_sub_false2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_ac_correct_word_show_sub_true1
+#+TESTY: program='cargo test --test test_p8funcs test_ac_correct_word_show_sub_true1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_ac_correct_word_show_sub_true1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_ac_correct_word_show_sub_true2
+#+TESTY: program='cargo test --test test_p8funcs test_ac_correct_word_show_sub_true2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_ac_correct_word_show_sub_true2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_ac_false_correct_string1
+#+TESTY: program='cargo test --test test_p8funcs test_ac_false_correct_string1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_ac_false_correct_string1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_ac_false_correct_string2
+#+TESTY: program='cargo test --test test_p8funcs test_ac_false_correct_string2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_ac_false_correct_string2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_ac_true_correct_string1
+#+TESTY: program='cargo test --test test_p8funcs test_ac_true_correct_string1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_ac_true_correct_string1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_ac_true_correct_string2
+#+TESTY: program='cargo test --test test_p8funcs test_ac_true_correct_string2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_ac_true_correct_string2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_ac_false_correct_string3
+#+TESTY: program='cargo test --test test_p8funcs test_ac_false_correct_string3'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_ac_false_correct_string3 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_ac_true_correct_string3
+#+TESTY: program='cargo test --test test_p8funcs test_ac_true_correct_string3'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_p8funcs.rs 
+
+running 1 test
+test test_ac_true_correct_string3 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC

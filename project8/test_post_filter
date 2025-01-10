@@ -1,0 +1,23 @@
+#!/bin/awk -f
+# 
+# Filter out variable results in rust tests. Each of the rules below
+# are applied to test output in sequence to remove text that may vary
+# from system to the next making the test output predictable to check
+# for fixed strings.
+
+/Running tests/{                # remove last field with path to test file
+  $NF = "";                     # which varies from one system to the next
+}
+
+/test result:/{                 # remove data after "failed;" as this lists
+  gsub("failed;.*$","failed;"); # the number of tests in the suite which varies
+}                               # makes the tests fragile
+{
+  gsub("^ *","");               # remove leading whitespace
+  gsub("in [0-9]+[.][0-9]+s",   # blank out times which vary between runs
+       "in _.__s");
+}
+{
+  print;                        # print lines of out after modification
+}
+
