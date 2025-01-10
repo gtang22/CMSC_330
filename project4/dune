@@ -1,0 +1,6 @@
+(tests
+  (names student)
+  (libraries p4 oUnit))
+(env
+  (dev
+    (flags (:standard -w -33))))
