@@ -1,0 +1,89 @@
+#+TITLE: Problem 2 Word Count Program
+#+TESTY: PREFIX=prob2
+#+TESTY: USE_POINTS=1
+#+TESTY: POINTS=5
+
+* prob2_wc no args usage
+Check to see that the prob2_wc program handles a lack of command line
+arguments correctly. I should not panic but rather print a usage
+message and exit(1) to indicate a failure to run normally.
+
+Note: the non-zero error code message should not be printed by the
+program; rather this is checked by the testing framework and printed
+if a non-zero code is returned.
+
+#+TESTY: program='cargo run --quiet --bin prob2_wc --'
+#+BEGIN_SRC sh
+usage: target/debug/prob2_wc <filename>
+Non-zero return code 1
+#+END_SRC
+
+* prob2_wc bruce.txt
+Count words in the file bruce.txt, a short but notable quote.
+
+#+TESTY: program='cargo run --quiet --bin prob2_wc -- test-data/bruce.txt'
+#+BEGIN_SRC sh
+   2   17   91 test-data/bruce.txt
+#+END_SRC
+
+* prob2_wc gettysburg.txt
+Count the file test-data/gettysburg.txt, a famous speach
+
+#+TESTY: program='cargo run --quiet --bin prob2_wc -- test-data/gettysburg.txt'
+#+BEGIN_SRC sh
+  25  283 1511 test-data/gettysburg.txt
+#+END_SRC
+
+* prob2_wc howl.txt
+Count the file test-data/howl.txt, a famous poem.
+
+#+TESTY: program='cargo run --quiet --bin prob2_wc -- test-data/howl.txt'
+#+BEGIN_SRC sh
+ 145 2909 17521 test-data/howl.txt
+#+END_SRC
+
+* prob2_wc error no file
+Run on a non-existent file to ensure that the program detects this and
+produces an early exit() e.g. does not panic. 
+
+The "Non-zero return code" message should not be printed as it comes
+from the testing framework checking the executable.
+
+#+TESTY: program='cargo run --quiet --bin prob2_wc -- test-data/no-such-file.txt'
+#+BEGIN_SRC sh
+Couldn't open file test-data/no-such-file.txt: No such file or directory (os error 2)
+Non-zero return code 1
+#+END_SRC
+
+* prob2_wc empty.txt
+Ensure that an empty file exists in test-data/ as git likes to discard
+these.
+#+TESTY: points=0
+#+BEGIN_SRC sh
+>> touch test-data/empty.txt
+#+END_SRC
+
+Run on an empty file which should just return 0s for everything.
+#+TESTY: points=5
+#+TESTY: program='cargo run --quiet --bin prob2_wc -- test-data/empty.txt'
+#+BEGIN_SRC sh
+   0    0    0 test-data/empty.txt
+#+END_SRC
+
+* prob2_wc command line
+Runs several invocations of prob2_wc as a command line session to
+stress test it a bit.
+
+#+BEGIN_SRC sh
+>> cargo run --quiet --bin prob2_wc -- test-data/dijkstra.txt
+  40  271 1633 test-data/dijkstra.txt
+
+>> cargo run --quiet --bin prob2_wc -- 
+usage: target/debug/prob2_wc <filename>
+
+>> cargo run --quiet --bin prob2_wc -- test-data/no-such-file.txt
+Couldn't open file test-data/no-such-file.txt: No such file or directory (os error 2)
+
+>> cargo run --quiet --bin prob2_wc -- test-data/howl.txt
+ 145 2909 17521 test-data/howl.txt
+#+END_SRC

@@ -1,0 +1,232 @@
+#+TITLE: Problem 1 Basic Functions
+#+TESTY: PREFIX=prob1
+#+TESTY: POST_FILTER=./test_post_filter
+#+TESTY: USE_POINTS=1
+#+TESTY: POINTS=5
+
+* test_gauss1
+#+TESTY: points=3
+#+TESTY: program='cargo test --test test_prob1 test_gauss1'
+
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_gauss1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_gauss2
+#+TESTY: points=2
+#+TESTY: program='cargo test --test test_prob1 test_gauss2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_gauss2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_in_range1
+#+TESTY: points=3
+#+TESTY: program='cargo test --test test_prob1 test_in_range1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_in_range1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_in_range2
+#+TESTY: points=2
+#+TESTY: program='cargo test --test test_prob1 test_in_range2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_in_range2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mean1
+#+TESTY: points=3
+#+TESTY: program='cargo test --test test_prob1 test_mean1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_mean1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_mean2
+#+TESTY: points=2
+#+TESTY: program='cargo test --test test_prob1 test_mean2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_mean2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_subset1
+#+TESTY: program='cargo test --test test_prob1 test_subset1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_subset1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_subset2
+#+TESTY: program='cargo test --test test_prob1 test_subset2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_subset2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_to_binstring1
+#+TESTY: program='cargo test --test test_prob1 test_to_binstring1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_to_binstring1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_to_binstring2
+#+TESTY: program='cargo test --test test_prob1 test_to_binstring2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_to_binstring2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_circulant1
+#+TESTY: points=5
+#+TESTY: program='cargo test --test test_prob1 test_circulant1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_circulant1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+
+* test_circulant2
+#+TESTY: points=5
+#+TESTY: program='cargo test --test test_prob1 test_circulant2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_circulant2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+
+* test_circulant3
+#+TESTY: points=5
+#+TESTY: program='cargo test --test test_prob1 test_circulant3'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_circulant3 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+
+* test_circulant4
+#+TESTY: points=5
+#+TESTY: program='cargo test --test test_prob1 test_circulant4'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_circulant4 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+
+* test_count_words1
+#+TESTY: points=5
+#+TESTY: program='cargo test --test test_prob1 test_count_words1'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_count_words1 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+* test_count_words2
+#+TESTY: points=5
+#+TESTY: program='cargo test --test test_prob1 test_count_words2'
+#+BEGIN_SRC sh
+Finished test [unoptimized + debuginfo] target(s) in _.__s
+Running tests/test_prob1.rs 
+
+running 1 test
+test test_count_words2 ... ok
+
+test result: ok. 1 passed; 0 failed;
+
+#+END_SRC
+
+
